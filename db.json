@@ -1,12 +1,12 @@
 
 [
-    { "id": 1, "category": "Banana", "price": 680, "image": "./images/banana1.webp" },
-    { "id": 2, "category": "Banana", "price": 680, "image": "./images/banana2.webp" },
-    { "id": 3, "category": "Banana", "price": 680, "image": "./images/banana3.webp" },
-    { "id": 4, "category": "Apple", "price": 700, "image": "./images/apple1.webp" },
-    { "id": 5, "category": "Apple", "price": 700, "image": "./images/apple2.webp" },
-    { "id": 6, "category": "Apple", "price": 1200, "image": "./images/apple3.png" },
-    { "id": 7, "category": "Strawberry", "price": 1200, "image": "./images/strawberry1.jpg" },
-    { "id": 8, "category": "Strawberry", "price": 950, "image": "./images/strawberry2.webp" },
-    { "id": 9, "category": "Strawberry", "price": 950, "image": "./images/strawberry3.jpg" }
+    { "id": 1, "category": "Banana", "price": 680, "image": "./banana1.webp" },
+    { "id": 2, "category": "Banana", "price": 680, "image": ".//banana2.webp" },
+    { "id": 3, "category": "Banana", "price": 680, "image": "./banana3.webp" },
+    { "id": 4, "category": "Apple", "price": 700, "image": "./apple1.webp" },
+    { "id": 5, "category": "Apple", "price": 700, "image": "./apple2.webp" },
+    { "id": 6, "category": "Apple", "price": 1200, "image": "./apple3.png" },
+    { "id": 7, "category": "Strawberry", "price": 1200, "image": "./strawberry1.jpg" },
+    { "id": 8, "category": "Strawberry", "price": 950, "image": "./strawberry2.webp" },
+    { "id": 9, "category": "Strawberry", "price": 950, "image": "./strawberry3.jpg" }
 ]
