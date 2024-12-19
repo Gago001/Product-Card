@@ -81,13 +81,14 @@
   .product ul {
     display: flex;
     justify-content: space-between;
+
   }
 
   .product li {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 35%;
+    width: 34%;
   }
 
   .product h3 {
