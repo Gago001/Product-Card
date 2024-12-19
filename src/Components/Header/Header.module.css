@@ -31,3 +31,33 @@
     background: rgba(255, 255, 255, 0.5);
     color: #4facfe;
   }
+
+  @media only screen and (max-width: 667px) {
+    .headerContainer {
+      padding: 15px 0;
+      margin-bottom: 20px;
+    }
+  
+    .rowHeader ul {
+      flex-direction: column;
+      gap: 15px;
+      align-items: center;
+    }
+  
+    .rowHeader li {
+      padding: 12px 20px;
+      font-size: 16px;
+    }
+  }
+  
+  @media only screen and (max-width: 375px) {
+    .headerContainer {
+      padding: 10px 0;
+    }
+  
+    .rowHeader li {
+      font-size: 14px;
+      padding: 10px 15px;
+    }
+  }
+  
