@@ -11,7 +11,8 @@ export default function Product({ filteredProducts ,AddCard}) {
                     <li key={product.id}>
                         <img src={product.image} alt={product.category} style={{ width: '160px', height: '140px' }} />
                         <h1>{product.category}</h1>
-                        <h3>Price: {product.price} AMD</h3>
+                        <h3>Price: {product.price}</h3>
+                        <p>AMD</p>
                         <button onClick={() => AddCard(product)}>Order</button>
                     </li>
                 ))}

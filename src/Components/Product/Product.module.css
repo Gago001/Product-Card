@@ -1,10 +1,11 @@
+
 .product {
   display: flex;
   flex-wrap: wrap;
-  width: 50%;
-  padding: 20px;
-  height: fit-content;
+  justify-content: space-between;
   gap: 20px;
+  width: 100%;
+  padding: 20px;
 }
 
 .product ul {
@@ -14,16 +15,17 @@
   width: 100%;
   padding: 0;
   margin: 0;
-  gap: 20px;
+  gap: 15px;
 }
 
 .product li {
   background: rgba(255, 255, 255, 0.1);
-  border-radius: 10px;
+  border-radius: 12px;
   padding: 20px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
   text-align: center;
-  transition: transform 0.3s;
+  width: 30%;
+  transition: transform 0.3s, background 0.3s;
 }
 
 .product li:hover {
@@ -32,27 +34,21 @@
 }
 
 .product img {
+  width: 100%;
+  height: auto;
   border-radius: 10px;
-  margin-bottom: 15px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .product h1 {
   font-size: 22px;
   color: #052b4c;
-  margin-bottom: 10px;
-}
-
-.product h3 {
-  font-size: 18px;
-  color: #ffffff;
   margin-bottom: 15px;
 }
 
 .product button {
-  padding: 10px 15px;
+  padding: 12px 20px;
   border: none;
-  border-radius: 5px;
+  border-radius: 8px;
   background: #4facfe;
   color: #ffffff;
   font-size: 16px;
@@ -66,50 +62,21 @@
 }
 
 
-
-
-/* Media queries for iPhone screen sizes */
-@media only screen and (max-width: 667px) {
-  .product {
-    width: 100%;
-    padding: 15px;
-  }
-
-  .product ul {
+@media only screen and (max-width: 480px) {
+  .product li {
+    display: flex;
     flex-direction: column;
+    align-items: center;
+    width: 37%; 
+  }
+  .product h3{
     width: 100%;
+    margin: 0;
   }
 
-  .product li {
+  .product button {
     width: 100%;
-    margin-bottom: 15px;
     padding: 15px;
-  }
-
-  .product img {
-    width: 100%;
-    height: auto;
-  }
-
-  .product button {
-    width: 100%;
-    padding: 12px 0;
-    font-size: 16px;
-  }
-}
-
-@media only screen and (max-width: 375px) {
-  .product {
-    padding: 10px;
-  }
-
-  .product li {
-    padding: 10px;
     font-size: 14px;
-  }
-
-  .product button {
-    font-size: 14px;
-    padding: 10px 15px;
   }
 }
