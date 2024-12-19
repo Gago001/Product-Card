@@ -11,20 +11,18 @@ function App() {
  
 
   const [card, setCard] = useState([]);
-    const AddCard = (product) => {
-
-        setCard((prev) => {
-            const addProduct = prev.find((item) => item.id === product.id);
-            if (addProduct) {
-                return prev.map((item) => 
-                    item.id === product.id ? { ...item, quantity: item.quantity + 1 } : item
-                )
-            } else {
-                return [...prev, { ...product, quantity: 1 }]
-            }
-        })
+  const AddCard = (product) => {
+    const isAdd = card.find((item) => item.id === product.id);
+    if (isAdd) {
+        setCard(card.map((item) =>
+            item.id === product.id
+                ? { ...item, quantity: item.quantity + 1 }
+                : item
+        ));
+    } else {
+        setCard([...card, { ...product, quantity: 1 }]);
     }
-
+};
 
   const filteredProducts = selectedCategory === 'All'
     ? products
