@@ -9,7 +9,7 @@ export default function Product({ filteredProducts ,AddCard}) {
             <ul>
                 {filteredProducts.map((product) => (
                     <li key={product.id}>
-                        <img src={product.image} alt={product.category} style={{ width: '160px', height: '140px' }} />
+                        <img  src={product.image} alt={product.category} />
                         <h1>{product.category}</h1>
                         <h3>Price: {product.price}</h3>
                         <p>AMD</p>
